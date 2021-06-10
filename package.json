@@ -1,0 +1,9 @@
+{
+  "name": "hhget",
+  "version": "0.1",
+  "description": "html header getter",
+  "repository": "https://github.com/totomaru12/hhget.git",
+  "author": "totomaru",
+  "license": "MIT",
+  "private": true
+}
