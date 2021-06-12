@@ -1,3 +1,7 @@
-export function hhget({element, filterKey, filterValue, targetKey}) {
-    // TODO
+exports.load = () => {
+    return {}; // TODO
+}
+
+exports.get = ({hhSource, element, filterKey, filterValue, targetKey}) => {
+    return [] // TODO
 }
