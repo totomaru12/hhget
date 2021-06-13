@@ -5,6 +5,7 @@ test('get html head elemnt', () => {
         <html>
             <head>
                 <link rel="icon" href="xxx.ico">
+                <meta property="og:image" content="zzz.png">
             </head>
         </html>
     `);
@@ -15,5 +16,13 @@ test('get html head elemnt', () => {
         filterKey: 'rel',
         filterValue: 'icon',
         targetKey: 'href',
-    })).toEqual(['xxx.ico']);
+    })).toEqual('xxx.ico');
+
+    expect(hhget.get({
+        hhSource: hh,
+        element: 'meta',
+        filterKey: 'property',
+        filterValue: 'og:image',
+        targetKey: 'content',
+    })).toEqual('zzz.png');
 });
