@@ -25,4 +25,12 @@ test('get html head elemnt', () => {
         filterValue: 'og:image',
         targetKey: 'content',
     })).toEqual('zzz.png');
+
+    expect(hhget.get({
+        hhSource: hh,
+        element: 'dummy_element',
+        filterKey: 'dummy_key',
+        filterValue: 'dummy_value',
+        targetKey: 'dummy_taget',
+    })).toEqual(undefined);
 });
