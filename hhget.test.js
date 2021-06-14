@@ -1,4 +1,4 @@
-const hhget = require('./hhget')
+const hhget = require('./hhget');
 
 test('get html head elemnt', () => {
     const hh = hhget.load(`
