@@ -49,7 +49,7 @@ const href = hhget.get({
 });
 
 // href becomes "xxx.ico"
-// this library can't get yyy.ico""
+// this library can't get "yyy.ico"
 ```
 
 ## setup
